@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Headers from '../components/Headers';
+import PortfolioChart from '../components/PortfolioChart';
+import BuyTokens from '../components/BuyTokens';
 import { BiDotsHorizontalRounded } from 'react-icons/bi'
 import { AiOutlinePlus } from 'react-icons/ai'
 
@@ -33,7 +36,7 @@ const styles = {
 const Home: NextPage = () => {
   return (
     <div className={styles.wrapper}>
-      {/* <Header /> */}
+      <Headers />
       <div className={styles.mainContainer}>
         <div className={styles.leftMain}>
           <div className={styles.portfolioAmountContainer}>
@@ -45,7 +48,7 @@ const Home: NextPage = () => {
           </div>
           <div>
             <div className={styles.chartContainer}>
-              {/* <PortfolioChart /> */}
+              <PortfolioChart />
             </div>
           </div>
           <div className={styles.buyingPowerContainer}>
@@ -58,7 +61,7 @@ const Home: NextPage = () => {
               <div className={styles.noticeMessage}>
                 Transfer your funds here.
               </div>
-              {/* <BuyTokens /> */}
+              <BuyTokens />
             </div>
           </div>
           {/* <Notice /> */}
